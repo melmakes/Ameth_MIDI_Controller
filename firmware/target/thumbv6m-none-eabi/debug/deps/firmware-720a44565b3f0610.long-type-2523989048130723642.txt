@@ -1,0 +1,1 @@
+WS2812<xiao_m0::atsamd_hal::gpio::Pin<PA06, xiao_m0::atsamd_hal::gpio::Disabled<xiao_m0::atsamd_hal::gpio::Floating>>>

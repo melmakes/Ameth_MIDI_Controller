@@ -1,0 +1,3 @@
+cargo:rustc-link-search=C:\Users\blake\Documents\Rust Projects\Ameth_MIDI_Controller\firmware\target\thumbv6m-none-eabi\release\build\atsamd21g-eabfbc62919a185f\out
+cargo:rerun-if-changed=device.x
+cargo:rerun-if-changed=build.rs
