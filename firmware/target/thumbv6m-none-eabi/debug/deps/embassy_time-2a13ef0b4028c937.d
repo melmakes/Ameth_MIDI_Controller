@@ -1,0 +1,11 @@
+C:\Users\blake\Documents\Rust Projects\ameth04\target\thumbv6m-none-eabi\debug\deps\embassy_time-2a13ef0b4028c937.d: C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\lib.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\fmt.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\delay.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\duration.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\instant.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\timer.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\../README.md
+
+C:\Users\blake\Documents\Rust Projects\ameth04\target\thumbv6m-none-eabi\debug\deps\libembassy_time-2a13ef0b4028c937.rmeta: C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\lib.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\fmt.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\delay.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\duration.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\instant.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\timer.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\../README.md
+
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\lib.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\fmt.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\delay.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\duration.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\instant.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\timer.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-0.5.1\src\../README.md:

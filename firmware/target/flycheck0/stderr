@@ -1,0 +1,30 @@
+   0.269458000s  INFO prepare_target{force=false package_id=firmware v0.1.0 (C:\Users\blake\Documents\Rust Projects\Ameth_MIDI_Controller\firmware) target="firmware"}: cargo::core::compiler::fingerprint: fingerprint error for firmware v0.1.0 (C:\Users\blake\Documents\Rust Projects\Ameth_MIDI_Controller\firmware)/Check { test: true }/TargetInner { name: "firmware", doc: true, ..: with_path("C:\\Users\\blake\\Documents\\Rust Projects\\Ameth_MIDI_Controller\\firmware\\src\\main.rs", Edition2021) }
+   0.269515800s  INFO prepare_target{force=false package_id=firmware v0.1.0 (C:\Users\blake\Documents\Rust Projects\Ameth_MIDI_Controller\firmware) target="firmware"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\blake\Documents\Rust Projects\Ameth_MIDI_Controller\firmware\target\thumbv6m-none-eabi\debug\.fingerprint\firmware-a55dabad7abedf5d\test-bin-firmware`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking firmware v0.1.0 (C:\Users\blake\Documents\Rust Projects\Ameth_MIDI_Controller\firmware)
+error: could not compile `firmware` (bin "firmware" test) due to 1 previous error

@@ -1,0 +1,9 @@
+C:\Users\blake\Documents\Rust Projects\ameth04\target\thumbv6m-none-eabi\debug\deps\embedded_io-22b2b2acdaf8bc08.d: C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\lib.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\mod.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\slice_mut.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\slice_ref.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\../README.md
+
+C:\Users\blake\Documents\Rust Projects\ameth04\target\thumbv6m-none-eabi\debug\deps\libembedded_io-22b2b2acdaf8bc08.rmeta: C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\lib.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\mod.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\slice_mut.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\slice_ref.rs C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\../README.md
+
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\lib.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\mod.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\slice_mut.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\impls\slice_ref.rs:
+C:\Users\blake\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embedded-io-0.6.1\src\../README.md:

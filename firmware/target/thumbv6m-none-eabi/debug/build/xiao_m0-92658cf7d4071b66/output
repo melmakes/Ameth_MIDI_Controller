@@ -1,0 +1,3 @@
+cargo:rustc-link-search=C:\Users\blake\Documents\Rust Projects\ameth04\target\thumbv6m-none-eabi\debug\build\xiao_m0-92658cf7d4071b66\out
+cargo:rerun-if-changed=memory.x
+cargo:rerun-if-changed=build.rs

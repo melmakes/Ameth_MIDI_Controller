@@ -1,0 +1,3 @@
+cargo:rustc-link-search=C:\Users\blake\Documents\Rust Projects\ameth04\target\thumbv6m-none-eabi\debug\build\atsamd21g-31995e9137c87d97\out
+cargo:rerun-if-changed=device.x
+cargo:rerun-if-changed=build.rs
