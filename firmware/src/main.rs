@@ -13,9 +13,9 @@ use hal::fugit::RateExtU32;
 //use ws2812_spi as ws2812;
 
 //use crate::ws2812::Ws2812;
-//use smart_leds::SmartLedsWrite;
-//use smart_leds_trait::RGB8;
-use ws2812_rs::{WS2812SPI, SendColorBySPI, Color};
+use smart_leds::SmartLedsWrite;
+use smart_leds_trait::RGB8;
+use ws2812_rs::{Color, WS2812, GlowColor};
 
 #[entry]
 fn main() -> ! {
@@ -38,26 +38,27 @@ fn main() -> ! {
     //name simplification for our pins
     let mut delay = Delay::new(core.SYST, &mut clocks);
 
-    let (miso,mosi,sclk) = (pins.a9, pins.a10, pins.a8 );
+    //let (miso,mosi,sclk) = (pins.a9, pins.a10, pins.a8 );
 
-    let spi = bsp::spi_master(
-        &mut clocks,
-        3.MHz(),
-        peripherals.SERCOM0,
-        &mut pm,
-        sclk,
-        mosi,
-        miso,
-    );
+    //let spi = bsp::spi_master(
+    //    &mut clocks,
+    //    3.MHz(),
+    //    peripherals.SERCOM0,
+    //    &mut pm,
+    //    sclk,
+    //    mosi,
+    //    miso,
+    //);
 
     //list of fun colors
     //let mut data: [RGB8; 7] = [RGB8::default(); 7];
     //list of all white
     //let empty: [RGB8; 7] = [RGB8::default(); 7];
     //let mut ws = Ws2812::new(spi);
-    //let led_pin = pins.a10.into_push_pull_output();
+    let led_pin = pins.a10.into_push_pull_output();
 
-    let mut leds = WS2812SPI::new(spi); 
+    let mut leds = WS2812::new(led_pin, 800_000_u64); 
+    
     let data: [Color; 7] = [
         Color::red(),
         Color::orange(),
@@ -69,12 +70,19 @@ fn main() -> ! {
 
     loop {
         
-        //writes green?
+        //ws2812_rs implementation
+        leds.send_color(data);
+        delay.delay_ms(1000_u32);
+        leds.send_color([Color::white();7]);
+        delay.delay_ms(1000_u32);
         
-        leds.write_colors(data, 3_000_000).unwrap();
-        delay.delay_ms(1000_u32);
+
+
+        //ws2812_spi implementation
+        //leds.write_colors(data, 3_000_000).unwrap();
+        //delay.delay_ms(1000_u32);
         //writes white?
-        leds.write_colors([Color::white(); 7], 3_000_000).unwrap();
-        delay.delay_ms(1000_u32);
+        //leds.write_colors([Color::white(); 7], 3_000_000).unwrap();
+        //delay.delay_ms(1000_u32);
     }
 }
