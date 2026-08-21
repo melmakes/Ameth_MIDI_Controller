@@ -9,7 +9,7 @@ cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
 panic-halt = "0.2"
 smart-leds = "0.4.0"
 ws2812-rs = "0.3.1"
-ws2812-spi = {version = "0.5.1",  features = ["reset_single_transaction"]}
+ws2812-spi = {version = "0.5.1"}
 smart-leds-trait = "0.3.2"
 
 [profile.dev]
@@ -18,3 +18,4 @@ opt-level = 1
 [profile.release]
 debug = 2
 opt-level = "s"
+
