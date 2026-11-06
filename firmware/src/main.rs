@@ -6,6 +6,7 @@ extern crate panic_halt;
 
 use hal::{clock::GenericClockController, delay::Delay, prelude::*};
 use bsp::{entry, hal, pac};
+use hal::timer::TimerCounter;
 use pac::{CorePeripherals, Peripherals};
 use xiao_m0::{self as bsp, hal::sercom::spi};
 use hal::fugit::RateExtU32;
@@ -42,7 +43,7 @@ fn main() -> ! {
     //spi peripheral instantiation
     let mut spi = bsp::spi_master(
         &mut clocks,
-        3.MHz(),
+        2.MHz(),
         peripherals.SERCOM0,
         &mut pm,
         sclk,
@@ -52,7 +53,7 @@ fn main() -> ! {
 
     //post-hoc reconfiguring
     let mut cfg = spi.disable();
-    cfg.set_spi_mode(spi::MODE_3);
+    cfg.set_spi_mode(spi::MODE_0);
     spi = cfg.enable();
     
 
@@ -68,6 +69,8 @@ fn main() -> ! {
     
     //list of all white
     let empty: [RGB8;7] = [RGB8::default();7];
+
+    //let null: [RGB8;1] = [data[0]];
     
     let mut ws = Ws2812::new(spi);
     //ws.mode = 
@@ -76,10 +79,10 @@ fn main() -> ! {
         //writes our designated colors?
         ws.write(data.iter().cloned())
             .expect("we need to be able to iterate");
-        delay.delay_ms(500_u32);
+        delay.delay_ms(1000_u32);
         //writes white?
         ws.write(empty.iter().cloned())
             .expect("we need to be able to iterate after a delay");
-        delay.delay_ms(500_u32);
+        delay.delay_ms(1000_u32);
     }
 }
