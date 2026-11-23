@@ -11,7 +11,7 @@ use pac::{CorePeripherals, Peripherals};
 use xiao_m0::{self as bsp, hal::sercom::spi};
 use hal::fugit::RateExtU32;
 
-use ws2812_spi as ws2812;
+use ws2812_spi::prerendered as ws2812;
 
 use crate::ws2812::Ws2812;
 use smart_leds::SmartLedsWrite;
@@ -43,7 +43,7 @@ fn main() -> ! {
     //spi peripheral instantiation
     let mut spi = bsp::spi_master(
         &mut clocks,
-        2.MHz(),
+        3.MHz(),
         peripherals.SERCOM0,
         &mut pm,
         sclk,
@@ -71,18 +71,17 @@ fn main() -> ! {
     let empty: [RGB8;7] = [RGB8::default();7];
 
     //let null: [RGB8;1] = [data[0]];
+    //buffer for prerendering
+    const BUFFER_LENGTH: usize = 7 * 12;
+    let mut buffer: [u8; BUFFER_LENGTH] = [0; BUFFER_LENGTH];
     
-    let mut ws = Ws2812::new(spi);
+    let mut ws = Ws2812::new(spi, &mut buffer);
     //ws.mode = 
     loop {
-        
-        //writes our designated colors?
-        ws.write(data.iter().cloned())
-            .expect("we need to be able to iterate");
-        delay.delay_ms(1000_u32);
-        //writes white?
-        ws.write(empty.iter().cloned())
-            .expect("we need to be able to iterate after a delay");
-        delay.delay_ms(1000_u32);
+        ws.write(empty.iter().cloned()).unwrap();
+        for i in 0..data.len() {
+            ws.write(data.iter().take(i).cloned()).unwrap();
+            delay.delay_ms(1000_u32);
+        }
     }
 }
