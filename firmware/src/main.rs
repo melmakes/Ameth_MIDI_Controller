@@ -57,7 +57,7 @@ fn main() -> ! {
     //let mut ws = Ws2812::new(spi);
     let led_pin = pins.a10.into_push_pull_output();
 
-    let mut leds = WS2812::new(led_pin, 800_000_u64); 
+    let mut leds = WS2812::new(led_pin, 48_000_000_u64); 
     
     let data: [Color; 7] = [
         Color::red(),

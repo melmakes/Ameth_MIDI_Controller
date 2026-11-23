@@ -19,5 +19,3 @@ opt-level = 1
 debug = 2
 opt-level = "s"
 
-[features]
-spinloop_delay = []
